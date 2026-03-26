@@ -46,11 +46,11 @@ The infrastructure environment was built using Oracle VirtualBox with separate S
 
 Disk allocation and partitioning were configured prior to installing Windows Server.
 
-![Disk allocation and partition](screenshots/Disk allocation and partition.png)
+[Disk allocation and partition](screenshots/Disk allocation and partition.png)
 
 After installation, Server Manager confirmed successful deployment.
 
-![Server Manager Dashboard](screenshots/Server Manager Dashboard.png)
+[Server Manager Dashboard](screenshots/Server Manager Dashboard.png)
 
 ---
 
@@ -58,11 +58,11 @@ After installation, Server Manager confirmed successful deployment.
 
 Active Directory Domain Services (AD DS) was installed through Server Manager.
 
-![Add AD Roles and Features](screenshots/Add AD Roles and Features.png)
+[Add AD Roles and Features](screenshots/Add AD Roles and Features.png)
 
 Prerequisite checks confirmed the system was ready for domain promotion.
 
-![prerequisites check](screenshots/prerequisites check.png)
+[prerequisites check](screenshots/prerequisites check.png)
 
 ---
 
@@ -70,19 +70,19 @@ Prerequisite checks confirmed the system was ready for domain promotion.
 
 The server was promoted to a Domain Controller and configured as the root of a new forest.
 
-![promote to domain controller](screenshots/promote to domain controller.png)
+[promote to domain controller](screenshots/promote to domain controller.png)
 
 A new forest root domain was created: corp.local
 
-![adding a new forect with a root domain](screenshots/adding a new forect with a root domain.png)
+[adding a new forect with a root domain](screenshots/adding a new forect with a root domain.png)
 
 Domain controller configuration options were verified during setup.
 
-![Domain controller options](screenshots/Domain controller options.png)
+[Domain controller options](screenshots/Domain controller options.png)
 
 Installation completed successfully with administrator role configured.
 
-![domain installed and admin role](screenshots/domain installed and admin role.png)
+[domain installed and admin role](screenshots/domain installed and admin role.png)
 
 ---
 
@@ -90,9 +90,9 @@ Installation completed successfully with administrator role configured.
 
 The Active Directory domain environment was confirmed operational.
 
-![domain active](screenshots/domain active.png)
+[domain active](screenshots/domain active.png)
 
-![domain active 02](screenshots/domain active 02.png)
+[domain active 02](screenshots/domain active 02.png)
 
 ---
 
@@ -100,11 +100,11 @@ The Active Directory domain environment was confirmed operational.
 
 Connectivity between the domain controller and the client virtual machine was verified.
 
-![Client Server communicating with Server VM](screenshots/Client Server communicating with Server VM.png)
+[Client Server communicating with Server VM](screenshots/Client Server communicating with Server VM.png)
 
 The server also confirmed inbound communication from the client system.
 
-![Server VM receiving network from Client VM](screenshots/Server VM receiving network from Client VM.png)
+[Server VM receiving network from Client VM](screenshots/Server VM receiving network from Client VM.png)
 
 ---
 
@@ -114,7 +114,7 @@ Organizational Units were created for HR, IT, and Marketing departments to simul
 
 Users were assigned to security groups within their respective OUs.
 
-![adding a user to a group within its OU](screenshots/adding a user to a group within its OU.png)
+[adding a user to a group within its OU](screenshots/adding a user to a group within its OU.png)
 
 ---
 
@@ -122,11 +122,11 @@ Users were assigned to security groups within their respective OUs.
 
 The Windows client system was successfully joined to the domain environment.
 
-![successfully added ClientVM to domain](screenshots/successfully added ClientVM to domain.png)
+[successfully added ClientVM to domain](screenshots/successfully added ClientVM to domain.png)
 
 Domain authentication was verified using domain user accounts.
 
-![User accounts successfully logged in on client VM](screenshots/User accounts successfully logged in on client VM.png)
+[User accounts successfully logged in on client VM](screenshots/User accounts successfully logged in on client VM.png)
 
 ---
 
@@ -134,11 +134,11 @@ Domain authentication was verified using domain user accounts.
 
 Group Policy settings were configured to allow domain user authentication and environment control.
 
-![GPO allowing domain users log in](screenshots/GPO allowing domain users log in.png)
+[GPO allowing domain users log in](screenshots/GPO allowing domain users log in.png)
 
 Group Policy configuration was verified through Group Policy Management.
 
-![Group Policy Management Implemented](screenshots/Group Policy Management Implemented.png)
+[Group Policy Management Implemented](screenshots/Group Policy Management Implemented.png)
 
 ---
 
@@ -151,7 +151,7 @@ C:\TESTCompanyData
 ├── IT
 └── Marketing
 
-![Test Company Data Folder created on Server](screenshots/Test Company Data Folder created on Server.png)
+[Test Company Data Folder created on Server](screenshots/Test Company Data Folder created on Server.png)
 
 ---
 
@@ -161,19 +161,19 @@ Security group membership was used to enforce department-level file access permi
 
 HR users were restricted to HR resources only.
 
-![HR user being able to access only HR file as a result of share](screenshots/HR user being able to access only HR file as a result of share.png)
+[HR user being able to access only HR file as a result of share](screenshots/HR user being able to access only HR file as a result of share.png)
 
 IT users were restricted to IT resources only.
 
-![IT user being able to access only IT file as a result of share](screenshots/IT user being able to access only IT file as a result of share.png)
+[IT user being able to access only IT file as a result of share](screenshots/IT user being able to access only IT file as a result of share.png)
 
 Marketing users were restricted to Marketing resources only.
 
-![Marketing user being able to access only marketing file as a result of share](screenshots/Marketing user being able to access only marketing file as a result of share.png)
+[Marketing user being able to access only marketing file as a result of share](screenshots/Marketing user being able to access only marketing file as a result of share.png)
 
 Access verification confirmed correct permission enforcement.
 
-![TEST FILE being accessed on IT account with authorized group](screenshots/TEST FILE being accessed on IT account with authorized group.png)
+[TEST FILE being accessed on IT account with authorized group](screenshots/TEST FILE being accessed on IT account with authorized group.png)
 
 ---
 
