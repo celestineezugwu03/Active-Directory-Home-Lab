@@ -1,30 +1,90 @@
-# Active Directory Home Lab
+# Active Directory Enterprise Lab Environment
 
-## Project Overview
-This project simulates a corporate IT infrastructure using Windows Server and Active Directory.
+This project simulates a small enterprise Windows Server infrastructure using Active Directory Domain Services (AD DS).
 
-The lab demonstrates how system administrators manage users, computers, and policies in an enterprise environment.
+The environment demonstrates centralized authentication, DNS configuration, organizational unit structure, role-based access control (RBAC), NTFS permissions, and Access-Based Enumeration (ABE).
 
-## Technologies Used
-- Windows Server 2022
-- Active Directory
-- DNS
-- DHCP
-- Group Policy
-- Virtual Machines
+---
 
-## Lab Architecture
-Domain Controller: Windows Server  
-Client Machine: Windows 10  
+## Infrastructure Overview
 
-Domain Name: company.local
+Domain Name:
+corp.local
 
-## Objectives
-- Install and configure Active Directory
-- Create and manage users
-- Join client machine to domain
-- Configure Group Policy
-- Simulate enterprise network environment
+Components:
 
-## Project Status
-🚧 Lab Setup in Progress
+• Windows Server Domain Controller  
+• Windows 10 Domain-joined Client  
+• Active Directory Domain Services (AD DS)  
+• DNS Configuration  
+• Organizational Units (HR, IT, Marketing)  
+• Security Groups for RBAC  
+• NTFS Permissions  
+• SMB Share Configuration  
+• Access-Based Enumeration (ABE)
+
+---
+
+## Lab Objectives
+
+This lab demonstrates how enterprise environments:
+
+• Deploy domain controllers  
+• Configure DNS authentication infrastructure  
+• Organize users using OUs  
+• Implement RBAC with security groups  
+• Secure departmental file access  
+• Troubleshoot domain join failures  
+• Apply NTFS and Share permissions  
+• Restrict folder visibility using ABE  
+
+---
+
+## File Server Structure
+
+C:\TESTCompanyData
+
+HR  
+IT  
+Marketing  
+
+Access permissions enforced using security groups:
+
+HR → HR_Staff  
+IT → IT_Admins, IT_Support  
+Marketing → Marketing_Staff  
+
+Access-Based Enumeration ensures users only see authorized folders.
+
+---
+
+## Troubleshooting Scenarios Simulated
+
+• Domain join failure  
+• DNS misconfiguration  
+• Firewall blocking connectivity  
+• Permission inheritance conflicts  
+• Share visibility without file access  
+
+---
+
+## Skills Demonstrated
+
+Active Directory Domain Services  
+DNS configuration  
+OU design  
+Group policy validation  
+Security group management  
+NTFS permissions  
+Share permissions  
+Access-Based Enumeration  
+RBAC implementation  
+Enterprise file server architecture  
+
+---
+
+## Documentation
+
+Full implementation guide available here:
+
+/documentation/Active_Directory_Infrastructure_Documentation.docx
